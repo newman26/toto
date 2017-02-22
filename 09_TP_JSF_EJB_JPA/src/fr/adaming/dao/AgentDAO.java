@@ -34,6 +34,8 @@ String req=" FROM Agent a"
 		
 for (Agent a:liste){
 		System.out.println(a);
+		
+		System.out.println("luna");
 }
 		if (liste.size()==1){
 			System.out.println("______________________________ on a trouvé un utilisateur____________________");
