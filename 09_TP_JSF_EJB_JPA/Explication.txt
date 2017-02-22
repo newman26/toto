@@ -1,0 +1,6 @@
+
+Pour les etapes à suivre pour la creation du projet voir le site:
+
+creating jsf ejb jpa application with wildfly using eclipse
+
+http://www.thejavageek.com/2015/01/09/creating-jsf-ejb-jpa-application-using-eclipse-wildfly/

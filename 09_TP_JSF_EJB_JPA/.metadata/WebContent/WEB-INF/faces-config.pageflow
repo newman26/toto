@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf148772743632518" configfile="/09_TP_JSF_EJB_JPA/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" id="pf148772744634919" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" outlinks="pf148772744634920 pf148772744634921" inlinks="pf148772744634921 pf148772744634922" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="accueil.xhtml" id="pf148772744634923" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf148772744634920 pf148772744634924" path="/accueil.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="*.xhtml" id="pf148772744634925" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf148772744634924 pf148772744634922" path="/*.xhtml"/>
+  <links id="pf148772744634920" target="pf148772744634923" source="pf148772744634919" outcome="succes"/>
+  <links id="pf148772744634921" target="pf148772744634919" source="pf148772744634919" outcome="echec"/>
+  <links id="pf148772744634924" target="pf148772744634923" source="pf148772744634925" outcome="accueil"/>
+  <links id="pf148772744634922" target="pf148772744634919" source="pf148772744634925" outcome="login"/>
+</pageflow:Pageflow>
