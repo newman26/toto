@@ -13,10 +13,7 @@ import fr.adaming.model.Todo;
 public class ClassTest {
 
 	public static void main(String[] args) {
-		/*
-		 * 1- Test de Mise en place de l'environnement
-		 */
-		// ajoterTodo();
+		
 
 		/*
 		 * 2- Test d'Association 1-N
