@@ -14,7 +14,7 @@ import javax.persistence.Query;
 import fr.adaming.model.Agent;
 
 
-@Stateless//
+@Stateless//newmanluna
 public class AgentDAO implements IAgentDAO{
 
 	@PersistenceContext(unitName="PU")
