@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Evenement</title>
+</h:head>
+
+<h:body>
+
+	<h:form>
+		<h3>
+			<h:outputText value="#{msg.pageTitle}"></h:outputText>
+		</h3>
+
+		<h:panelGrid columns="2">
+
+			Select a country :
+			<h:selectOneMenu value="#{user.country}" onchange="submit()"
+				valueChangeListener="#{user.countryChanged}">
+				<f:selectItems value="#{user.countries}" var="Locale"
+					itemLabel="#{Locale.displayCountry}" itemValue="#{Locale.country}" />
+			</h:selectOneMenu>
+
+			Selected Locale : 
+			<h:outputText value="#{user.country}"/>
+
+		</h:panelGrid>
+		
+		<p><h:commandButton value="Submit"/></p>
+
+	</h:form>
+
+
+</h:body>
+</html>
